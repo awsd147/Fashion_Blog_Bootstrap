@@ -1,0 +1,83 @@
+.header{
+    background: url(https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg);
+    background-position: center;
+    background-size: 400px;
+    height: 775px;
+}
+
+/* CSS for layout */
+.layout p{
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 2rem;
+}
+.layout h1{
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase !important;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.info{
+    background: url(https://img.lovepik.com/photo/40006/2210.jpg_wh860.jpg);
+    height: unset;
+}
+.sizeicon{
+    font-size: 2rem !important;
+    padding: 0.5rem !important;
+}
+.about{
+
+    position: relative;
+}
+.about::before{
+    left: 44.5%;
+    content: '';
+    position: absolute;
+    border-right: 1px solid red;
+    height: 78%;
+    z-index: -1;
+    top: 4%;
+}
+.text-circle
+{   height: 50%;
+    width: 20%;
+    border-radius: 50%;
+}
+.img-about img{
+    max-width: 100%;
+    width: 70%;
+}
+.sizeicon{
+    font-size: 2rem;
+}
+ @media only screen and (max-width:767px){
+    .about::before {
+        left: 42px;
+        content: '';
+        position: absolute;
+        border-right: 1px solid red;
+        height: 75%;
+        z-index: -1;
+        top: 3%;
+    }
+    .img-about img{
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 66px !important;
+        height: 66px !important;
+    }
+    .img-about{
+        text-align:unset;
+        padding: 0 !important;
+        margin: 0 !important;
+        width: 25% !important;
+    }
+    .text-left{
+        text-align: left !important;
+    }
+} 
+

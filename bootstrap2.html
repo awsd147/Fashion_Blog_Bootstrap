@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap 2</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./bootstrap2.css" />
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-xl bg-transparent navbar-dark ">
+      <div class="container text-uppercase ">
+        <!-- Brand -->
+        <a class="navbar-brand text-warning" href="#">Start bootstrap</a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="text-warning">Menu</span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse list-item" >
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item  ">
+              <a class="nav-link text-warning " href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">sample cost</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-warning" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container-fluid pt-5 header">
+      <div class="container text-center pt-5 mt-5">
+        <div class="col-lg-12 layout pt-5 mt-5">
+          <p class="p-3 mb-2 bg-transparent text-white">
+            Welcome To Our Studio!
+          </p>
+          <h1 class="p-3 mb-2 bg-transparent text-white">
+            IT'S NICE TO MEET YOU
+          </h1>
+          <div class="col-lg-12 pt-5 pb-5">
+            <button
+              type="button"
+              class="btn btn-warning btn-lg pt-3 pb-3 pr-5 pl-5"
+            >
+              TELL ME MORE
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="col-lg-12 service mt-5 mb-3 pt-5 text-center">
+        <div class="col-lg-12">
+          <h1>SERVICES</h1>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-12 pb-5 mb-5">
+            <img
+              src="data:image/jpeg;base64,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"
+              class="rounded-circle rounded"
+              alt="Cinque Terre"
+              width="250"
+              height="250"
+            />
+            <h1>E-Commerce</h1>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              maxime quam architecto quo inventore harum ex magni, dicta
+              impedit.</span
+            >
+          </div>
+          <div class="col-lg-4 col-md-12 pb-5 mb-5">
+            <img
+              src="https://www.indiewire.com/wp-content/uploads/2016/08/the-wind-rises08.jpg?w=800"
+              class="rounded-circle rounded"
+              alt="Cinque Terre"
+              width="250"
+              height="250"
+            />
+            <h1>Responsive Design</h1>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              maxime quam architecto quo inventore harum ex magni, dicta
+              impedit.</span
+            >
+          </div>
+          <div class="col-lg-4 col-md-12 pb-5 mb-5">
+            <img
+              src="https://w7.pngwing.com/pngs/774/1021/png-transparent-setsuko-seita-studio-ghibli-anime-film-grave-miscellaneous-black-hair-fictional-character.png"
+              class="rounded-circle rounded"
+              alt="Cinque Terre"
+              width="250"
+              height="250"
+            />
+            <h1>Web Security</h1>
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              maxime quam architecto quo inventore harum ex magni, dicta
+              impedit.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-12 content mt-5 pt-5 mb-3">
+        <div class="col-lg-12 text-center">
+          <h1>PORTFOLIO</h1>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="row  mt-5 text-center">
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+            <img
+              class="img-fluid"
+              src="http://moudus.com/moudus/assets/img/portfolio/01-thumbnail.jpg"
+              alt=""
+            />
+            <h1>Web Security</h1>
+            <span>Illustration</span>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+            <img
+              class="img-fluid"
+              src="http://moudus.com/moudus/assets/img/portfolio/02-thumbnail.jpg"
+              alt=""
+            />
+            <h1>Lines</h1>
+            <span>Branding</span>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+            <img
+              class="img-fluid"
+              src="http://moudus.com/moudus/assets/img/portfolio/03-thumbnail.jpg"
+              alt=""
+            />
+            <h1>Explore</h1>
+            <span>Graphic Design</span>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+            <img
+              class="img-fluid"
+              src="http://moudus.com/moudus/assets/img/portfolio/06-thumbnail.jpg"
+              alt=""
+            />
+            <h1>Finish</h1>
+            <span>Identity</span>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
+            <img
+              class="img-fluid"
+              src="http://moudus.com/moudus/assets/img/portfolio/05-thumbnail.jpg"
+              alt=""
+            />
+            <h1>Southwest</h1>
+            <span>Website Design</span>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <img
+              class="img-fluid"
+              src="http://moudus.com/moudus/assets/img/portfolio/04-thumbnail.jpg"
+              alt=""
+            />
+            <h1>Window</h1>
+            <span>Photography</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5 pt-5 About">
+      <h1>ABOUT</h1>
+      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <div class="row mt-5 ml-5 about">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12  d-flex flex-nowrap ">
+          <div class="col-xl-4 col-lg-4 col-md-4 order-xl-1 order-lg-1 order-md-1 order-2 text-xl-right text-lg-right text-sm-right text-left">
+            <h1>March 2011 An Agency is Born</h1>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+              recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
+              consectetur!
+            </span>
+          </div>
+          
+          <div class="col-xl-3 ml-xl-3 col-lg-3 ml-lg-3 pl-lg-3 pr-lg-4 col-md-4 mr-md-2 order-1 img-about">
+            <img
+              src="http://www.autopediainc.com/assets/images/about_services_faq_bg.jpg"
+              class="rounded-circle d-block mr-auto ml-lg-2 "
+              alt="Cinque Terre"
+              width="150"
+              height="150"
+            />
+          </div>
+        </div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 d-flex flex-nowrap mb-5">
+          <div class=" col-lg-5 col-md-5 order-xl-2 order-lg-2 order-md-2 order-1 text-left">
+            <h1>December 2012 Transition to Full Service</h1>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+              recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
+              consectetur!
+            </span>
+          </div>
+          <div class="col-xl-3 mr-xl-5 pr-xl-2 pl-xl-3 col-lg-3 pl-lg-4 pr-lg-1 mr-lg-5 col-md-4 ml-md-auto mr-md-2 pr-md-4 order-xl-1 order-lg-1 order-md-1 img-about">
+            <img
+            src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+            class="rounded-circle d-block ml-auto ml-lg-auto ml-md-auto"
+            alt="Cinque Terre"
+            width="150"
+              height="150"
+            />
+        </div>
+        </div>
+        
+        <div class="col-xl-12 col-lg-12 col-md-12 col-12 d-flex flex-nowrap mb-5">
+          <div class="col-xl-4 col-lg-4 col-md-4 order-xl-1 order-lg-1 order-md-1 order-2 text-xl-right text-lg-right text-sm-right text-left">
+            <h1>July 2014 Phase Two Expansion</h1>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+              recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
+              consectetur!
+            </span>
+          </div>
+          
+          <div class="col-xl-3 ml-xl-4 col-lg-3 ml-lg-3 pl-lg-3 pr-lg-4 col-md-4 mr-md-2 mr-lg-auto mr-5 pr-5 order-xl-1 order-1 img-about">
+            <img
+              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+              class="rounded-circle d-block mr-lg-auto "
+              alt="Cinque Terre"
+              width="150"
+              height="150"
+            />
+          </div>
+        </div>
+
+        <div class="col-xl-12 col-lg-12 col-md-12 d-flex flex-nowrap">
+          <div class="col-lg-5 col-md-5 order-xl-2 order-lg-2 order-md-2  order-1 text-left">
+            <h1>2009-2011 Our Humble Beginnings</h1>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+              voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam,
+              recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium
+              consectetur!
+            </span>
+          </div>
+          <div class="col-xl-3 mr-xl-5 pr-xl-2 pl-xl-3 col-lg-3 pl-lg-4 pr-lg-1 mr-lg-5 col-md-4 ml-md-auto mr-md-2 pr-md-4 img-about">
+            <img
+            src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.jpg"
+            class="rounded-circle d-block ml-auto mr-lg-2 "
+            alt="Cinque Terre"
+            width="150"
+            height="150"
+            />
+          </div>
+        </div>
+        <!-- <div class="col-xl-4 col-lg-4 bg-dark text-circle">
+          huy
+        </div> -->
+      </div>
+    </div>
+    <div class="container">
+      <div class="col-lg-12 service mt-5 mb-3 pt-5 text-center">
+        <div class="col-lg-12">
+          <h1>OUR AMAZING TEAM</h1>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-12 pb-4">
+            <img
+              src="https://cuongtruyen.com/wp-content/uploads/2019/09/luffy-funny-face-1024x576.jpg"
+              class="rounded-circle rounded"
+              alt="Cinque Terre"
+              width="250"
+              height="250"
+            />
+            <h1>Luffy</h1>
+            <span>Lead Designer.</span>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 pb-4">
+            <img
+              src="https://gamek.mediacdn.vn/133514250583805952/2020/3/7/anh-1-1583592253266481895600.jpg"
+              class="rounded-circle rounded"
+              alt="Cinque Terre"
+              width="250"
+              height="250"
+            />
+            <h1>Naruto</h1>
+            <span>Lead Marketer</span>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 pb-4">
+            <img
+              src="https://blog.hamtruyentranh.com/wp-content/uploads/2019/12/Dr.-Stone-season-2.jpg"
+              class="rounded-circle rounded"
+              alt="Cinque Terre"
+              width="250"
+              height="250"
+            />
+            <h1>Senku</h1>
+            <span>Lead Developer</span>
+          </div>
+        </div>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque,
+          laboriosam veritatis, quos non quis ad perspiciatis, totam corporis
+          ea, alias ut unde.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row mt-5 ">
+        <div class="col-lg-3 pb-4">
+          <a href=""
+            ><img
+              class="img-fluid d-block mx-auto h-75 d-inline-"
+              src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.6435-9/39948911_2101056303492513_1721660880669638656_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ad2b24&_nc_ohc=CChCSEfbeBYAX9VZXI3&tn=O34y0HenABme4von&_nc_ht=scontent.fdad2-1.fna&oh=e5fc1ed75ff84ab1027ae14852dc197e&oe=60DF3848"
+              alt=""
+              width="150"
+              height="150"
+          /></a>
+        </div>
+        <div class="col-lg-3 pb-4">
+          <a href=""
+            ><img
+              class="img-fluid d-block mx-auto h-75 d-inline-"
+              src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.6435-9/39899847_833884663473562_65326585716146176_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=ad2b24&_nc_ohc=j39rLJGZk6UAX_hEOTf&_nc_ht=scontent.fdad2-1.fna&oh=b814735a355df4afc00174747d118c92&oe=60DF2E71"
+              alt=""
+              width="150"
+              height="150"
+          /></a>
+        </div>
+        <div class="col-lg-3 pb-4">
+          <a href=""
+            ><img
+              class="img-fluid d-block mx-auto h-75 d-inline-"
+              src="https://scontent.fdad2-1.fna.fbcdn.net/v/t31.18172-8/14125044_1681551962171351_8255219254614204247_o.jpg?_nc_cat=106&ccb=1-3&_nc_sid=ad2b24&_nc_ohc=QdvfNf_KRF4AX9-ZAAn&_nc_ht=scontent.fdad2-1.fna&oh=30ba80db2bbd3434de43c5f2517be987&oe=60DD4F70"
+              alt=""
+              width="150"
+              height="150"
+          /></a>
+        </div>
+        <div class="col-lg-3 pb-4">
+          <a href=""
+            ><img
+              class="img-fluid d-block mx-auto h-75 d-inline-"
+              src="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.18169-9/12079154_448700768671675_492421929814169203_n.jpg?_nc_cat=101&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=gI9c8AklZBIAX_e8d9x&_nc_ht=scontent.fdad2-1.fna&oh=3269ab0a16f32f83ef81ead822e9cc27&oe=60DEA9F2"
+              alt=""
+              width="150"
+              height="150"
+          /></a>
+        </div>
+        
+        
+        
+      </div>
+    </div>
+    <div class="container-fluid info">
+      <div class="container mt-5">
+        <div class=" text-center text-white">
+          <h1>CONTACT US</h1>
+          <p>Lorem ipsum dolor sit amet consectetur.</p>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 ">
+            <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com">
+            <input type="email" class="form-control mb-3" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <textarea class="form-control pb-4" id="exampleFormControlTextarea1" rows="5"></textarea>
+          </div>
+          <div class="col-lg-12 col-md-12 pt-5 pb-5">
+            <button
+              type="button"
+              class="btn btn-warning btn-lg pt-3 pb-3 pr-5 pl-5"
+            >
+              SEND MESSAGE
+            </button>
+          </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="container footer">
+      <div class="row text-center">
+        <div class="col-lg-4 col-md-4 col-12 mt-4">
+          <p>Copyright © Your Website 2020</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12">
+        <i class="bi bi-twitter sizeicon" ></i>
+        <i class="bi bi-facebook sizeicon"></i>
+        <i class="bi bi-github sizeicon"></i>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 mt-4">
+          <a href="" class="text-warning mr-5">Privacy Policy</a>
+          <a href=""class="text-warning"> Terms of Use</a>
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>
